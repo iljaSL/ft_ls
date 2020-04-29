@@ -11,3 +11,17 @@ between a pleasant project experience and an abominable one. For example, if you
 ft_printf to your libft, your life will be more enjoyable. The ft_ls project is totally
 doable without ft_printf, in the same way that you can eat yogurt with your fingers.
 But having a spoon still helps a lot....
+
+<strong>Sources</strong>:
+
+https://codeforwin.org/2018/03/c-program-to-list-all-files-in-a-directory-recursively.html
+https://stackoverflow.com/questions/3554120/open-directory-using-c
+https://stackoverflow.com/questions/8436841/how-to-recursively-list-directories-in-c-on-linux
+https://www.geeksforgeeks.org/merge-sort-for-linked-list/
+https://stackoverflow.com/questions/2589533/what-is-a-cursor-linked-list-c
+
+Videos:
+<a href="https://www.youtube.com/watch?v=7KTk8NVB1N8">Linux File Types</a>
+
+
+![](gif/ft_ls.gif)
