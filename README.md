@@ -1,4 +1,4 @@
-Intro
+<strong>Intro</strong>
 
 The ls command is one of the first commands you have learned to use with shell. It is
 also one you are using the most. Perhaps you have already asked yourself how is this
@@ -12,7 +12,7 @@ ft_printf to your libft, your life will be more enjoyable. The ft_ls project is 
 doable without ft_printf, in the same way that you can eat yogurt with your fingers.
 But having a spoon still helps a lot....
 
-It's a smaller version of ls, flags that are currently working -> -GRalrt
+<strong style="underline">It's a smaller version of ls, flags that are currently working -> -GRalrt</strong>
 <br>
 -a (Include directory entries whose names begin with a dot (.))
 <br>
