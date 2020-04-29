@@ -12,6 +12,22 @@ ft_printf to your libft, your life will be more enjoyable. The ft_ls project is 
 doable without ft_printf, in the same way that you can eat yogurt with your fingers.
 But having a spoon still helps a lot....
 
+It's a smaller version of ls, flags that are currently working -> -GRalrt
+<br>
+-a (Include directory entries whose names begin with a dot (.))
+<br>
+-l (List in long format.If the output is to a terminal, a total sum for all the file sizes is output on a line before the long listing.)
+<br>
+-r (Reverse the order of the sort to get reverse lexicographical order or the oldest entries first.)
+<br>
+-t (Sort by time modified (most recently modified first) before sorting the operands by lexicographical order.)
+<br>
+-R (Recursively list subdirectories encountered.)
+<br>
+-G (Enable colorized output)
+
+
+
 <strong>Sources</strong>:
 
 https://codeforwin.org/2018/03/c-program-to-list-all-files-in-a-directory-recursively.html
@@ -23,5 +39,9 @@ https://stackoverflow.com/questions/2589533/what-is-a-cursor-linked-list-c
 Videos:
 <a href="https://www.youtube.com/watch?v=7KTk8NVB1N8">Linux File Types</a>
 
+
+
+
+<strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
 ![](gif/ft_ls.gif)
