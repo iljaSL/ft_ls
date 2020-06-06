@@ -47,7 +47,7 @@ MergeSort(headRef)<br>
      *headRef = SortedMerge(a, b);
 
 <p align="center">
-    ![](gif/merge-sort.gif)
+    <img src="gif/merge-sort.gif">
 </p>
 
 <strong>Sources</strong>:
