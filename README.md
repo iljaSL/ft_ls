@@ -29,7 +29,7 @@ But having a spoon still helps a lot....
 <strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
 <p align="center">
-    ![](gif/ft_ls.gif)
+    <img width="460" height="460" src="gif/ft_ls.gif">
 </p>
 
 
