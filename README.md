@@ -26,7 +26,24 @@ But having a spoon still helps a lot....
 <br>
 -G (Enable colorized output)
 
+<strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
+![](gif/ft_ls.gif)
+
+I used the merge sort (for linked list) algorithm for this project. <br>
+MergeSort(headRef)<br>
+1) If the head is NULL or there is only one element in the Linked List 
+    then return.
+2) Else divide the linked list into two halves.  
+      FrontBackSplit(head, &a, &b); /* a and b are two halves */
+3) Sort the two halves a and b.
+      MergeSort(a);
+      MergeSort(b);
+4) Merge the sorted a and b (using SortedMerge() discussed here) 
+   and update the head pointer using headRef.
+     *headRef = SortedMerge(a, b);
+     
+![](gif/merge-sort.gif)
 
 <strong>Sources</strong>:
 
@@ -38,10 +55,3 @@ https://stackoverflow.com/questions/2589533/what-is-a-cursor-linked-list-c<br>
 
 Videos:
 <a href="https://www.youtube.com/watch?v=7KTk8NVB1N8">Linux File Types</a>
-
-
-
-
-<strong>usage: ft_ls [-GRalrt] [file ...]</storng>
-
-![](gif/ft_ls.gif)
