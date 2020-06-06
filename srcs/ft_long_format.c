@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_long_format.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ismelich <ismelich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/31 10:47:35 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/24 11:39:40 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/04 09:19:32 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,10 @@ void	perm_column(struct stat meta, char *file_name)
 	permission[i++] = (meta.st_mode & S_IXGRP) ? 'x' : '-';
 	permission[i++] = (meta.st_mode & S_IROTH) ? 'r' : '-';
 	permission[i++] = (meta.st_mode & S_IWOTH) ? 'w' : '-';
-	permission[i++] = (meta.st_mode & S_IXOTH) ? 'x' : '-';
+	if (meta.st_mode & S_ISVTX)
+		permission[i++] = (meta.st_mode & S_ISVTX) ? 't' : '-';
+	else
+		permission[i++] = (meta.st_mode & S_IXOTH) ? 'x' : '-';
 	permission[i++] = extended_character;
 	permission[i] = '\0';
 	ft_printf("%s ", permission);

@@ -6,7 +6,7 @@
 /*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/31 10:01:07 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/28 11:16:19 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/02 14:21:34 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	del_fname(t_ls **head_ref)
 	*head_ref = NULL;
 }
 
-int	max(int nbr1, int nbr2)
+int		max(int nbr1, int nbr2)
 {
 	if (nbr1 > nbr2)
 		return (nbr1);
@@ -49,7 +49,7 @@ int	max(int nbr1, int nbr2)
 void	padding_and_blocks(t_ls *ls, int *pad_nlink, int *pad_size)
 {
 	struct stat	meta;
-	int		total;
+	int			total;
 
 	total = 0;
 	while (ls)

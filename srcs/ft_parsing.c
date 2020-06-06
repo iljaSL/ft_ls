@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_parsing.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ismelich <ismelich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/26 13:47:31 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/28 10:01:41 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/02 14:51:51 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	two_args(t_ls *ls, t_ls *temp_ls, t_info *info, char *path)
 void	more_args(t_ls *ls, t_info *info, int i)
 {
 	info->skip_print = true;
-	info->no_dot_slash = true;
+	info->no_dt_sl = true;
 	info->var.tmp_i = i;
 	process_dir(ls, info);
 }

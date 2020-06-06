@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_merge_sort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ismelich <ismelich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/30 11:15:10 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/24 10:27:29 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/02 14:49:49 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,13 @@ t_ls	*sorted_merge(t_ls *a, t_ls *b)
 	return (result);
 }
 
-void	front_back_split(t_ls *source, t_ls **front_ref, t_ls **back_ref)
+void	front_back_split(t_ls *src, t_ls **front_ref, t_ls **back_ref)
 {
 	t_ls *fast;
 	t_ls *slow;
 
-	slow = source;
-	fast = source->next;
+	slow = src;
+	fast = src->next;
 	while (fast != NULL)
 	{
 		fast = fast->next;
@@ -77,7 +77,7 @@ void	front_back_split(t_ls *source, t_ls **front_ref, t_ls **back_ref)
 			fast = fast->next;
 		}
 	}
-	*front_ref = source;
+	*front_ref = src;
 	*back_ref = slow->next;
 	slow->next = NULL;
 }

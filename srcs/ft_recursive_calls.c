@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_calls.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ismelich <ismelich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/06 10:55:27 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/28 10:37:43 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/02 14:34:36 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void	print_dirpth_rec(t_info *info, char *path)
 {
 	if (info->skip_print == false)
 	{
-		if (info->no_dot_slash == false)
+		if (info->no_dt_sl == false)
 			ft_printf("\n./%s:\n", path);
-		else if (info->no_dot_slash == true)
+		else if (info->no_dt_sl == true)
 			ft_printf("\n%s:\n", path);
 	}
 	else if (info->print_path == true)
@@ -56,8 +56,8 @@ t_ls	*store_file_rec(t_info *info, char *path)
 	dir = opendir(path);
 	if (dir == NULL)
 	{
-		(info->no_dot_slash == false) && (ft_printf(BG_RED"\n./%s\n"RESET, path));
-		(info->no_dot_slash == true) && (ft_printf(BG_RED"\n%s\n"RESET, path));
+		(info->no_dt_sl == false) && (ft_printf(BG_RED"\n./%s\n"RESET, path));
+		(info->no_dt_sl == true) && (ft_printf(BG_RED"\n%s\n"RESET, path));
 		perm_denied(path + find_last_slash(path));
 		return (NULL);
 	}

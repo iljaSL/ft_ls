@@ -6,7 +6,7 @@
 /*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 11:44:04 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/28 10:26:02 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/02 14:22:46 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	files_from_dir(t_ls *ls, t_ls *tmp_ls, t_info *info)
 t_ls	*store_dir(t_ls *tmp_ls, t_info *info)
 {
 	struct stat	meta;
-	DIR		*dir;
+	DIR			*dir;
 
 	while (info->var.i < info->argc)
 	{
@@ -45,7 +45,7 @@ t_ls	*store_dir(t_ls *tmp_ls, t_info *info)
 		(dir != NULL) && (closedir(dir));
 		info->var.i++;
 	}
-		return (tmp_ls);
+	return (tmp_ls);
 }
 
 /*

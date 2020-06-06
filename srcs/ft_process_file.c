@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_process_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manager <manager@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ismelich <ismelich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 11:50:55 by ismelich          #+#    #+#             */
-/*   Updated: 2020/04/28 11:35:40 by manager          ###   ########.fr       */
+/*   Updated: 2020/06/04 17:24:17 by ismelich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	process_valid_file(t_ls *ls, t_info *info)
 {
 	struct stat	meta;
 	char		**arg_str;
-	int		arg_count;
-	int		i;
+	int			arg_count;
+	int			i;
 
 	arg_str = info->argv;
 	arg_count = info->argc;
@@ -42,7 +42,7 @@ void	process_valid_file(t_ls *ls, t_info *info)
 		del_fname(&ls);
 		info->var.new_line = true;
 		info->print_path = true;
-		info->no_dot_slash = true;
+		info->no_dt_sl = true;
 	}
 }
 
@@ -54,9 +54,9 @@ void	process_valid_file(t_ls *ls, t_info *info)
 void	process_invalid_file(t_ls *ls, t_info *info)
 {
 	struct stat	meta;
-	int		file_status;
-	int		i;
-	int		arg_count;
+	int			file_status;
+	int			i;
+	int			arg_count;
 	char		**arg_str;
 
 	arg_str = info->argv;
@@ -64,7 +64,7 @@ void	process_invalid_file(t_ls *ls, t_info *info)
 	i = info->var.i;
 	while (i < arg_count)
 	{
-		file_status = stat(arg_str[1], &meta);
+		file_status = stat(arg_str[i], &meta);
 		if (file_status == -1)
 			ls = store_fn(ls, arg_str[i]);
 		i++;
@@ -75,6 +75,6 @@ void	process_invalid_file(t_ls *ls, t_info *info)
 		print_invalidfn(ls);
 		del_fname(&ls);
 		info->print_path = true;
-		info->no_dot_slash = true;
+		info->no_dt_sl = true;
 	}
 }
