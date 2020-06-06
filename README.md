@@ -28,7 +28,10 @@ But having a spoon still helps a lot....
 
 <strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
-![](gif/ft_ls.gif)
+<p align="center">
+    ![](gif/ft_ls.gif)
+</p>
+
 
 I used the merge sort (for linked list) algorithm for this project. <br>
 MergeSort(headRef)<br>
@@ -42,8 +45,10 @@ MergeSort(headRef)<br>
 4) Merge the sorted a and b (using SortedMerge() discussed here) 
    and update the head pointer using headRef.
      *headRef = SortedMerge(a, b);
-     
-![](gif/merge-sort.gif)
+
+<p align="center">
+    ![](gif/merge-sort.gif)
+</p>
 
 <strong>Sources</strong>:
 
