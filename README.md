@@ -1,4 +1,4 @@
-<strong>Intro</strong>
+<strong><h1>Intro</h1></strong>
 
 The ls command is one of the first commands you have learned to use with shell. It is
 also one you are using the most. Perhaps you have already asked yourself how is this
@@ -30,11 +30,11 @@ But having a spoon still helps a lot....
 
 <strong>Sources</strong>:
 
-https://codeforwin.org/2018/03/c-program-to-list-all-files-in-a-directory-recursively.html
-https://stackoverflow.com/questions/3554120/open-directory-using-c
-https://stackoverflow.com/questions/8436841/how-to-recursively-list-directories-in-c-on-linux
-https://www.geeksforgeeks.org/merge-sort-for-linked-list/
-https://stackoverflow.com/questions/2589533/what-is-a-cursor-linked-list-c
+https://codeforwin.org/2018/03/c-program-to-list-all-files-in-a-directory-recursively.html<br>
+https://stackoverflow.com/questions/3554120/open-directory-using-c<br>
+https://stackoverflow.com/questions/8436841/how-to-recursively-list-directories-in-c-on-linux<br>
+https://www.geeksforgeeks.org/merge-sort-for-linked-list/<br>
+https://stackoverflow.com/questions/2589533/what-is-a-cursor-linked-list-c<br>
 
 Videos:
 <a href="https://www.youtube.com/watch?v=7KTk8NVB1N8">Linux File Types</a>
