@@ -26,9 +26,9 @@ But having a spoon still helps a lot....
 -G (Enable colorized output)
 
 <h4>How to install</h4>
-1. `git clone` the repo
-2. complie the executable wiht `make`
-3. `./ft_ls` is ready to use with the flags shown in the usage bellow
+1. `git clone` the repo <br>
+2. complie the executable wiht `make` <br>
+3. `./ft_ls` is ready to use with the flags shown in the usage bellow <br>
 
 <strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
