@@ -29,7 +29,7 @@ But having a spoon still helps a lot....
 1. `git clone` the repo <br>
 2. complie the executable wiht `make` <br>
 3. `./ft_ls` is ready to use with the flags shown in the usage bellow <br>
-
+<p></p>
 <strong>usage: ft_ls [-GRalrt] [file ...]</storng>
 
 <p align="center">
