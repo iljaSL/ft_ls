@@ -2,14 +2,8 @@
 
 The ls command is one of the first commands everyone has to learn in order to use shell. It is
 also probably the most used command of every programmer.
-To Recode ls and some of its options will allow you to find out how to interact with
-the file system using C. After all, you already know how to open, read, write and close a
-file. But, what about the directories? Special files? Rights, dates or sizes of the files?
-And while I am on the topic, the quality of your libft will make the difference
-between a pleasant project experience and an abominable one. For example, if you add
-ft_printf to your libft, your life will be more enjoyable. The ft_ls project is totally
-doable without ft_printf, in the same way that you can eat yogurt with your fingers.
-But having a spoon still helps a lot....
+To Recode ls and some of its options allowed me to find out how to interact with
+the file system using C. I used my own created printf, that I created in a different Hive project to make ft_ls a pleasant project experience. 
 
 <strong style="underline">It's a smaller version of ls, flags that are currently working -> -GRalrt</strong>
 <br>
